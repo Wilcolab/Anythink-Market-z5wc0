@@ -49,7 +49,7 @@ ItemSchema.methods.toJSONFor = function(user) {
     slug: this.slug,
     title: this.title,
     description: this.description,
-    image: this.image,
+    image: this.image || "https://picsum.photos/200/300.jpg",
     createdAt: this.createdAt,
     updatedAt: this.updatedAt,
     tagList: this.tagList,
